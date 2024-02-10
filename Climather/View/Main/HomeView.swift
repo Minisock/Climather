@@ -24,6 +24,7 @@ struct BottomSheetContentView: View {
 }
 
 struct HomeView: View {
+    @State var bottomSheetPosition: BottomSheetPosition = .middle
     @State private var isPresented = false
     @State private var selectedDetent: BottomSheet.PresentationDetent = .medium
     
@@ -62,17 +63,25 @@ struct HomeView: View {
                 Button("Show Credits") {
                             isPresented.toggle()
                         }
+                .buttonStyle(.borderedProminent)
                         .sheet(isPresented: $isPresented) {
-                            Text("Hello")
-//                        ContentMode: {
-//                            text()
-//                        }
-                                .presentationDetents([.medium, .large])
+                            ForecastView()
+                                .presentationDetents([.height(310), .medium, .large])
                                 .presentationDragIndicator(.hidden)
+                                .presentationBackground(.clear)
+                                .presentationContentInteraction(.scrolls)
+//                                .presentationBackgroundInteraction(.enabled(upThrough: .height(100)))
+                                .ignoresSafeArea()
                         }
                 
                 // MARK: Tab Bar
-                TabBar(action: {})
+                TabBar(action: {
+                    isPresented.toggle()
+                })
+                .sheet(isPresented: $isPresented) {
+                    ForecastView()
+                }
+                
             }
             .navigationBarHidden(true)
         }
