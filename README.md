@@ -9,17 +9,17 @@
 
 ### Home
 
-![Home](https://github.com/Minisock/Climather/assets/106252439/51b3d123-92ff-4406-876f-21dc6ea2d737)
+  ![Home](https://github.com/Minisock/Climather/assets/106252439/51b3d123-92ff-4406-876f-21dc6ea2d737)
 
 
 ### Made the glass effect to show the Hourly Forecast and Weekly Forecast
 
-![Forecast=Hourly](https://github.com/Minisock/Climather/assets/106252439/9c3a3580-6355-47ef-93c9-02c5a8535a85)
+  ![Forecast=Hourly](https://github.com/Minisock/Climather/assets/106252439/9c3a3580-6355-47ef-93c9-02c5a8535a85)
 
 
 ### Used the carrousel effect to check the rest of the week and we used SEGMENTED CONTROL to navigate between them
 
-![Forecast=Weekly](https://github.com/Minisock/Climather/assets/106252439/66b23eb3-561e-436a-9633-9c1788ce3c55)
+  ![Forecast=Weekly](https://github.com/Minisock/Climather/assets/106252439/66b23eb3-561e-436a-9633-9c1788ce3c55)
 
 
 ### Lovely 3D Design 
